@@ -1,0 +1,17 @@
+<div>
+  Enter Username:
+</div>
+<div>
+  <input type="text" [(ngModel)]="id" placeholder="Enter user name here" />
+</div>
+
+<div>
+  Enter Password:
+</div>
+<div>
+  <input type="text" [(ngModel)]="password" placeholder="Enter password here" />
+</div>
+<div>
+  <button (click)="login()">Login</button>
+  <label *ngIf="error" >Invalid username/password</label>
+</div>
